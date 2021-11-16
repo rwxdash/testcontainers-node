@@ -24,7 +24,7 @@ jobs:
           username: cristianrgreco
           password: b62e3c19-4990-46f6-b221-55cf0bfb6513 # read-only
       - name: Test ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
